@@ -2,26 +2,39 @@
     margin: 0;
     padding: 0;
 }
-/***************GRID*****************/
+/******************************GRID*************************************/
 html {
-    background-color: darkblue;
-    font-size: 15px;
+    background-color: white;
 }
+
+/***************BODY*****************/
 
 body {
     display:grid;
     grid-area: span span span;
-    grid-template-columns: 2 4px;;
+    grid-template-columns: 2;
 }
 
+a {
+    text-decoration: none;
+}
+
+h1 {
+    grid-area: auto;
+    font-size: 50px;
+    text-align: center;
+}
+/****************HEADER****************/
 header {
     background-color: darkgoldenrod;
     margin: 5px;
     align-content: center;
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 4;
 }
+
+/****************MAIN****************/
 
 main {
     background-color: burlywood;
@@ -31,17 +44,40 @@ main {
     text-align: center;
 }
 
+p {
+    margin: 5px;
+    font-size: 18px;
+}
+
+/****************SECTION****************/
+
+
 section {
     background-color: brown;
     margin: 5px;
 }
+
+/****************FOOTER****************/
 
 footer {
     background-color: black;
     margin: 5px;
 }
 
-/******************FLEX************************/
+/*******************************FLEX********************************/
+
+.nav-flexbar{
+    display: flex;
+}
+
+.nav1 {
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+    justify-content: center;
+}
 
 section {
     display: flex;
