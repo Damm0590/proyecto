@@ -2,28 +2,57 @@
     margin: 0;
     padding: 0;
 }
-
+/***************GRID*****************/
 html {
     background-color: darkblue;
+    font-size: 15px;
 }
 
 body {
     display:grid;
     grid-area: span span span;
+    grid-template-columns: 2 4px;;
 }
 
 header {
     background-color: darkgoldenrod;
+    margin: 5px;
+    align-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 main {
     background-color: burlywood;
+    margin: 5px;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
 }
 
 section {
     background-color: brown;
+    margin: 5px;
 }
 
 footer {
     background-color: black;
+    margin: 5px;
+}
+
+/******************FLEX************************/
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+/******************contacto**********************/
+
+form label {
+    color: gold;
+    font-size: 20px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
 }
