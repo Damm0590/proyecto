@@ -66,12 +66,6 @@ aside {
     border: 3px;
 }
 
-/****************FOOTER****************/
-footer {
-    background-color: black;
-    margin: 5px;
-}
-
 /*******************************NAV BAR********************************/
 .nav-flexbar{
     display: flex;
@@ -97,4 +91,10 @@ form label {
     font-size: 20px;
     margin: 5px 5px 5px 5px;
     padding: 5px;
+}
+
+/****************FOOTER****************/
+footer {
+    background-color: black;
+    margin: 5px;
 }
