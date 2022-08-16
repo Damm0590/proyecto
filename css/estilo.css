@@ -1,7 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 /******************************GRID*************************************/
 html {
     background-color: white;
@@ -10,6 +14,7 @@ html {
 /***************BODY*****************/
 
 body {
+    font-family: 'Poppins', sans-serif;
     display:grid;
     grid-area: span span span;
     grid-template-columns: 2;
@@ -101,4 +106,112 @@ form label {
     padding: 5px;
 }
 
-/*******************ANIMACIONES**************************/
+/*******************PAGINA GALERIA**************************/
+.titulo {
+    text-align:center;
+    font-size:3rem;
+    padding: .8rem 0 .4rem;
+   }
+   
+   .galeria {
+    padding-bottom:3m;
+    padding-top:1em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 100px;
+    grid-template-areas:
+    "img1 img1 img2 img3" 
+    "img1 img1 img4 img4 "
+    "img5 img5 img6 img7"
+    "img5 img5 img8 img8"
+    gap: 1.8em;
+   }
+   
+   .galery_picture {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+   }
+   
+   .galery_picture::before {
+    content: Galeria de Imagenes;
+    position: absolute;
+    top: o;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    transform: translate (100%);
+    transition: transform .4s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+   }
+   
+   .galery_picture::before {
+    transform: translate(0);
+   }
+   
+   
+   .galery_picture--g1 {
+    grid-area: img1;
+   }
+   
+   .galery_picture--g2 {
+    grid-area: img2;
+   }
+   .galery_picture--g3 {
+    grid-area: img3;
+   }
+   
+   .galery_picture--g4 {
+    grid-area: img4;
+   }
+   
+   .galery_picture--g5 {
+    grid-area: img5;
+   }
+   
+   .galery_picture--g6 {
+    grid-area: img6;
+   }
+   
+   .galery_picture--g7 {
+    grid-area: img7;
+   }
+   
+   .galery_picture--g8 {
+    grid-area: img8;
+   }
+    
+   .galery_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+   
+   /**************************MEDIA QUERY*********************/
+   
+   @media (max-width:768px) {
+    .titulo{
+     font-size: 2rem;
+     padding: .8em 0 .4em;
+   }
+}
+   
+   .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "img1 img1"
+    "img1 img1"
+    "img2 img3"
+    "img4 img4"
+    "img4 img4"
+    "img5 img5"
+    "img5 img5"
+    "img6 img7"
+    "img8 img8"
+    "img8 img8"
+   }
