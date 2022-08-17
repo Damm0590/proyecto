@@ -16,7 +16,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     display:grid;
-    grid-area: span span span;
+    grid-area: auto;
     grid-template-columns: repeat(4);
 }
 
@@ -43,7 +43,6 @@ header {
 /****************MAIN****************/
 
 main {
-    /*background-color: lightskyblue;*/
     margin: 5px;
     padding: 30px;
     justify-content: center;
@@ -189,7 +188,7 @@ form label {
    }
    
    /**************************MEDIA QUERY*********************/
-   
+  
    @media (max-width:768px) {
     .titulo{
      font-size: 2rem;
