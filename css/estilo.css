@@ -17,7 +17,7 @@ body {
     font-family: 'Poppins', sans-serif;
     display:grid;
     grid-area: span span span;
-    grid-template-columns: 2;
+    grid-template-columns: repeat(4);
 }
 
 a {
@@ -31,7 +31,8 @@ h1 {
 }
 /****************HEADER****************/
 header {
-    background-color: darkgoldenrod;
+    background-color: black;
+    color: white;
     margin: 5px;
     align-content: center;
     text-align: center;
@@ -42,7 +43,7 @@ header {
 /****************MAIN****************/
 
 main {
-    background-color: burlywood;
+    /*background-color: lightskyblue;*/
     margin: 5px;
     padding: 30px;
     justify-content: center;
@@ -107,12 +108,7 @@ form label {
 }
 
 /*******************PAGINA GALERIA**************************/
-.titulo {
-    text-align:center;
-    font-size:3rem;
-    padding: .8rem 0 .4rem;
-   }
-   
+  
    .galeria {
     padding-bottom:3m;
     padding-top:1em;
@@ -124,7 +120,7 @@ form label {
     "img1 img1 img4 img4 "
     "img5 img5 img6 img7"
     "img5 img5 img8 img8"
-    gap: 1.8em;
+     1.8em;
    }
    
    .galery_picture {
