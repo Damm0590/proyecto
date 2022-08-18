@@ -55,8 +55,8 @@ p {
 
 section {
     display: flex;
-    background-color: brown;
-    margin: 5px;
+    /*background-color: brown;
+    margin: 5px;*/
 }
 
 /****************FOOTER****************/
